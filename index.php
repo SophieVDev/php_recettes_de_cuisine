@@ -18,22 +18,23 @@
       </a>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+        <li><a href="#" class="nav-link px-2 link-secondary">Accueil</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Mes recettes</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Prix</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Contact</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Nous connaitre</a></li>
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
+        <button type="button" class="btn btn-outline-primary me-2">Se connecter</button>
+        <button type="button" class="btn btn-primary">S'inscrire</button>
       </div>
     </header>
   </div>
 </header>
+
 <body>
-<h1>Recettes de cuisine</h1> 
+<h1 class="row d-flex flex-wrap align-items-center justify-content-center">Recettes de cuisine</h1> 
 
 <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -45,35 +46,60 @@
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos perferendis accusamus consequuntur optio mollitia vel culpa facere placeat esse nisi nesciunt, fugiat nihil voluptatibus harum, ab aliquam quam non commodi necessitatibus, tempore quaerat quia deleniti! Aliquid quod consectetur expedita.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Mes recettes</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact</button>
         </div>
       </div>
     </div>
   </div>
 
   <div class="row">
-  <div class="card" style="width: 18rem;">
-  <img src="./uploads/recipes/1-chocolate-au-mousse.jpg" class="card-img-top" alt="mousse au chocolat">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="col-md-4">
+    <div class="card">
+    <img src="./uploads/recipes/1-chocolate-au-mousse.jpg" class="card-img-top" alt="mousse au chocolat">
+      <div class="card-body">
+        <h5 class="card-title">Mousse au chocolat</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis at nemo illum? Quisquam quas quia minima, est harum explicabo cupiditate.</p>
+        <a href="#" class="btn btn-primary">Voir la recette</a>
+      </div>
+    </div>
   </div>
-</div>
-</div>
+
+  <div class="col-md-4">
+    <div class="card">
+    <img src="./uploads/recipes/2-gratin-dauphinois.jpg" class="card-img-top" alt="mousse au chocolat">
+      <div class="card-body">
+        <h5 class="card-title">Gratin dauphinois</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit beatae vitae maiores iusto! Reiciendis eos similique at illo debitis voluptatibus?</p>
+        <a href="#" class="btn btn-primary">Voir la recette</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+    <img src="./uploads/recipes/3-salade.jpg" class="card-img-top" alt="mousse au chocolat">
+      <div class="card-body">
+        <h5 class="card-title">Salade</h5>
+        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi veritatis qui ex vel quibusdam quis libero officiis, atque explicabo sequi!</p>
+        <a href="#" class="btn btn-primary">Voir la recette</a>
+      </div>
+    </div>
+  </div>
+    </div>
+
 
 
 <footer>
 <div class="container">
   <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accueil</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Les recettes</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Prix</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Nous conaître</a></li>
     </ul>
-    <p class="text-center text-muted">© 2022 Company, Inc</p>
+    <p class="text-center text-muted">© 2023 Sitify</p>
   </footer>
 </div>
 </footer>
