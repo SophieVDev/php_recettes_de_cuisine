@@ -1,6 +1,6 @@
 <?php
-define('_IMAGES_PATH_','./uploads/recipes/');
 require_once('templates/header.php');
+require_once('lib/reciepes.php');
 ?>
 
 
@@ -23,32 +23,14 @@ require_once('templates/header.php');
     </div>
   </div>
 
-  <?php
-  $reciepes =[ 
-    ['title' => 'Mousse au chocolat','description' => 'Mousse ipsum dolor sit amet consectetur adipisicing elit. Debitis at nemo illum? Quisquam quas quia minima, est harum explicabo cupiditate.', 'image' =>'1-chocolate-au-mousse.jpg'],
-    
-    ['title' => 'Gratin d\'auphinois','description' => 'Gratin ipsum dolor sit amet consectetur adipisicing elit. Debitis at nemo illum? Quisquam quas quia minima, est harum explicabo cupiditate.', 'image' =>'2-gratin-dauphinois.jpg'],
-    
-    ['title' => 'Salade','description' => 'Salade ipsum dolor sit amet consectetur adipisicing elit. Debitis at nemo illum? Quisquam quas quia minima, est harum explicabo cupiditate.', 'image' =>'3-salade.jpg'],
-  ];
-
-  ?>
-
+  
   <div class="row">
 
     <?php
-    foreach ($reciepes as $reciepe){ ?>
-    <div class="col-md-4">
-      <div class="card">
-      <img src="<?=_IMAGES_PATH_.$reciepe["image"]?>" class="card-img-top" alt="mousse au chocolat">
-        <div class="card-body">
-          <h5 class="card-title"><?=$reciepe["title"]?></h5>
-          <p class="card-text"><?=$reciepe["description"]?></p>
-          <a href="#" class="btn btn-primary">Voir la recette</a>
-        </div>
-      </div>
-    </div>
-    <?php } ?>
+    foreach ($reciepes as $key => $reciepe){
+    include('templates/reciepes_partial.php');
+    // on intègre un clé pour intégrer des chiffres pour chaque recettes. C'est la valeur du tableau.
+    } ?>
 
   </div>
 
