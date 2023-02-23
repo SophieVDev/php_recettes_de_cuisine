@@ -1,3 +1,11 @@
+<?php require('lib/config.php');
+// le chemin pour trouver les images
+
+$currentPage = basename($_SERVER['SCRIPT_NAME']);
+//il n'y a que la variable que l'on a créé sinon basename, $server et script sont des termes PHP. Objectif : récupérer la fin de chaque url pour lier les onglets aux bon lien. tester var_dump(basename,$_SERVER pour choisir ce que l'on veut en loccurence le script name)
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,12 +25,13 @@
         <img src="./assets/images/logo-cuisinea-horizontal.jpg" alt="logo-horizontal" width = "250">
       </a>
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Accueil</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Mes recettes</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Prix</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Contact</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Nous connaitre</a></li>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav nav-pills">
+        <li class="nav-item"><a href="index.php" class="nav-link <?php if($currentPage ==='index.php'){ echo 'active';}?>">Accueil</a></li>
+        <!-- le terme active est propre à bootstrap si active l'onglet sera colorié -->
+        <li class="nav-item"><a href="recettes.php" class="nav-link <?php if($currentPage ==='recettes.php'){ echo 'active';}?>">Mes recettes</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Prix</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Nous connaitre</a></li>
       </ul>
 
       <div class="col-md-3 text-end">
